@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="/imgs/mobile_logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <title>Ремонт бытовой техники в Алматы</title>
+</head>
+<body>
+  <div class="topbar">
+    <div><i class="fa-solid fa-wrench"></i>  
+        Ремонт бытовой техники в Алматы и Алматинской области
+    </div>
+    <div class="contacts">
+        <div>
+            <i class="fa-solid fa-phone"></i> 
+            8 747 960 21 81
+        </div>
+        <div>
+            <i class="fa-solid fa-phone"></i> 
+            8 771 141 12 81
+        </div>
+        <div>
+            <i class="fa-solid fa-phone"></i> 
+            8 747 476 04 53
+        </div>
+        <div>
+            <i class="fa-solid fa-envelope"></i> 
+            discover_91@mail.ru
+        </div>
+    </div>
+  </div>
+
+    <header class="header">
+        <!-- Логотип -->
+        <div class="logo">
+            <image src="/imgs/logo.png" alt="Logo" id="logo">
+        </div>
+        
+        <!-- Кнопки меню -->
+        <nav class="head_links">
+            <ul>
+                <li><a href="#main_page">Главная</a></li>
+                <li><a href="#about_us">Коротко о нас</a></li>
+                <li><a href="#services">Наши услуги</a></li>
+                <li><a href="#footer">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <!-- Кнопки впп - телефон -->
+        <div class="header_btn">
+            <a class="btn btn-B" href="https://wa.me/7474760453">
+                <i class="fa-brands fa-whatsapp"></i> 
+                What's app
+            </a>
+            <a class="btn btn-B" href="tel:+77479602181">
+                <i class="fa-solid fa-phone"></i> 
+                Телефон
+            </a>
+        </div>
+
+        <div class="burger_menu">
+            <image src="/imgs/burger_menu.webp" alt="burger_menu" class="burger_menu_image" id="burgerBtn">
+        </div>
+    </header>
+        
+    <!-- Меню мобильной версии -->
+    <div class="mobile_menu" id="mobileMenu">
+        <div class="mbar_logo">
+            <image src="/imgs/logo.png" alt="Logo" id="logo" class="mbar_logo_img">
+        </div>
+        <span class="close_btn" id="closeBtn">&times;</span>
+        
+        <div class="mobile_div">
+            <a href="#services" class="btn burger_btns btn-B">Услуги</a>
+            <a href="#about_us" class="btn burger_btns btn-B">О нас</a>
+            <a href="#footer" class="btn burger_btns btn-B">Контакты</a>
+        </div>
+        
+        <div class="mobile_contacts">
+            <p>Связаться с нами</p>
+            <a href="tel:+77474760453" class="mobile_phone">+77474760453</a>
+            <a href="https://wa.me/7474760453" class="mobile_whatsapp">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <!-- Первый блок страницы -->
+    <section class="first_block_content" id="main_page">
+        <!-- Правая надпись -->
+        <div class="first_block_content_text">
+            <h1>БЫСТРЫЙ РЕМОНТ<br>БЫТОВОЙ ТЕХНИКИ<br>В АЛМАТЫ И АЛМАТИНСКОЙ ОБЛАСТИ</h1>
+            <p>Профессиональный ремонт любой бытовой техники с гарантией. Выезд мастера в день обращения!</p>
+            <a class="btn btn-B first_block_btn" href="tel:+77479602181">
+                <i class="fa-solid fa-phone"></i>
+                 Связаться с нами
+            </a>
+        </div>
+    </section>
+
+    <!-- Второй блок - О нас -->
+    <section class="second_section" id="about_us">
+        <div class="second_section_content">
+            <h1>О НАС</h1>
+            <h3>Опытный мастер готов выехать в любов время.</h3>
+            <p>10 лет наша компания набиралась опыта, оттачивала схему работы, следила за изменениями и запросами рынка, искала свою фишку. За это время мы поняли – чтобы быть уверенными в качестве собственных услуг, нужно все контролировать самостоятельно.
+                Мы тщательно выполняем услугу, сами подбираем и закупаем запасные части, тщательно отслеживаем мнения клиентов о нашей работе.</p>
+            
+            <aside class="preferences">
+                <div class="preferences__item">
+                    <span>24 / 7</span>
+                    <p>работаем без перерывов и выходных.</p>
+                </div>
+                <div class="preferences__item">
+                    <span>10 <i>лет</i></span>
+                    <p>устраняем неисправности стиральных машин.</p>
+                </div>
+                <div class="preferences__item">
+                    <span>1 <i>млн.</i></span>
+                    <p>единиц техники починено.</p>
+                </div>
+            </aside>  
+
+            <a class="btn btn-W first_block_btn" href="#contacts">
+                <i class="fa-solid fa-question"></i>
+                 Подробнее
+            </a>
+        </div>
+        <image src="/imgs/second_section.png" alt="worker" class="second_section_image">
+    </section>
+
+    <section class="three_section" id="services">
+        <h1>НАШИ УСЛУГИ</h1>
+
+        <div class="three_section_container">
+            <div class="three_section_content_block">
+                <image src="/imgs/washer_machie.png" alt="" class="three_section_content_block_image">
+                <h2>Ремонт стиральных машин</h2>
+                <p>Производим ремонт стиральных машин любой модели.</p>
+            </div>
+            <div class="three_section_content_block">
+                <image src="/imgs/freez.png" alt="" class="three_section_content_block_image">
+                <h2>Ремонт холодильников</h2>
+                <p>Ремонт всех типов холодильников и морозильных камер.</p>
+            </div>
+            <div class="three_section_content_block">
+                <image src="/imgs/disvasher.png" alt="" class="three_section_content_block_image">
+                <h2>Ремонт посудомоечных машин</h2>
+                <p>Ремонт посудомоечных машин любой сложности.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="four_section">
+        <h1>КАКИЕ МОДЕЛИ МЫ ОБСЛУЖИВАЕМ</h1>
+
+        <!-- First-row -->
+        <div class="four_section_container">
+            <div class="four_section_content_block">
+                <image src="/imgs/models/ARISTON_logo.png" alt="" class="four_section_content_block_image">
+            </div>
+            <div class="four_section_content_block">
+                <image src="/imgs/models/gorenje_logo.png" alt="" class="four_section_content_block_image">
+            </div>
+            <div class="four_section_content_block">
+                <image src="/imgs/models/Beko_logo.png" alt="" class="four_section_content_block_image">
+            </div>
+            <div class="four_section_content_block">
+                <image src="/imgs/models/bosch_logo.png" alt="" class="four_section_content_block_image">
+            </div>
+            <div class="four_section_content_block">
+                <image src="/imgs/models/candy_logo.png" alt="" class="four_section_content_block_image">
+            </div>
+            <div class="four_section_content_block">
+                <image src="/imgs/models/daewoo_logo.png" alt="" class="four_section_content_block_image">
+            </div>
+        </div>
+
+        <!-- Second-row -->
+        <div class="four_section_container">
+            <div class="four_section_content_block">
+                <image src="/imgs/models/electrolux_logo.png" alt="" class="four_section_content_block_image">
+            </div>
+            <div class="four_section_content_block">
+                <image src="/imgs/models/general_electric_logo.png" alt="" class="four_section_content_block_image">
+            </div>
+            <div class="four_section_content_block">
+                <image src="/imgs/models/huyndai_logo.png" alt="" class="four_section_content_block_image">
+            </div>
+            <div class="four_section_content_block">
+                <image src="/imgs/models/haier_logo.png" alt="" class="four_section_content_block_image">
+            </div>
+            <div class="four_section_content_block">
+                <image src="/imgs/models/hansa_logo.png" alt="" class="four_section_content_block_image">
+            </div>
+            <div class="four_section_content_block">
+                <image src="/imgs/models/indesit_logo.png" alt="" class="four_section_content_block_image">
+            </div>
+        </div>
+
+        <!-- Trird-row -->
+        <div class="four_section_container">
+            <div class="four_section_content_block">
+                <image src="/imgs/models/jvc_logo.png" alt="" class="four_section_content_block_image">
+            </div>
+            <div class="four_section_content_block">
+                <image src="/imgs/models/lg_logo.png" alt="" class="four_section_content_block_image">
+            </div>
+            <div class="four_section_content_block">
+                <image src="/imgs/models/panasonic_logo.png" alt="" class="four_section_content_block_image">
+            </div>
+            <div class="four_section_content_block">
+                <image src="/imgs/models/samsung_logo.png" alt="" class="four_section_content_block_image">
+            </div>
+            <div class="four_section_content_block">
+                <image src="/imgs/models/siemens_logo.png" alt="" class="four_section_content_block_image">
+            </div>
+            <div class="four_section_content_block">
+                <image src="/imgs/models/logo_aeg.png" alt="" class="four_section_content_block_image">
+            </div>
+        </div>
+    </section>
+    
+    <section class="five_sec">
+        <h1>КАК МЫ ЧИНИМ ТЕХНИКУ</h1>
+        <div class="five_sec_container">
+            <div class="five_sec_box">
+                <image src="/imgs/icons/d1.svg" class="five_sec_box_image"></image>
+                <h3>1. Узнаем о вашей проблеме по телефону или в мессенджере</h3>
+                <p>Мы уточним признаки неисправности и подготовим необходимые детали для ремонта.</p>
+            </div>
+            <div class="five_sec_box">
+                <image src="/imgs/icons/d2.svg" class="five_sec_box_image"></image>
+                <h3>2. Выезжаем на бесплатную диагностику за 1 час</h3>
+                <p>Мастер бесплатно проведёт диагностику на дому и озвучит предварительную стоимость ремонта.</p>
+            </div>
+            <div class="five_sec_box">
+                <image src="/imgs/icons/d3.svg" class="five_sec_box_image"></image>
+                <h3>3. Заключение договора на полную диагностику</h3>
+                <p>Если проблему не удаётся выявить на месте, предложим доставку в сервис для полной диагностики и заключим договор.</p>
+            </div>
+        </div>
+        <div class="five_sec_container">
+            <div class="five_sec_box">
+                <image src="/imgs/icons/d4.svg" class="five_sec_box_image"></image>
+                <h3>4. Определение окончательной цены</h3>
+                <p> После полной диагностики называем точную цену ремонта. Если она вас не устраивает — технику вернём в том же виде. Вы оплатите только стоимость обратной доставки, или самовывоз.</p>
+            </div>
+            <div class="five_sec_box">
+                <image src="/imgs/icons/d5.svg" class="five_sec_box_image"></image>
+                <h3>5. Ремонт техники за 1 день</h3>
+                <p>Осуществляем ремонт бытовой техники, используя только сертифицированные детали от производителя</p>
+            </div>
+            <div class="five_sec_box">
+                <image src="/imgs/icons/d6.svg" class="five_sec_box_image"></image>
+                <h3>6. Оплачиваете работу и мы предоставляем гарантию</h3>
+                <p>Вы оплачиваете ремонт техники и мы предоставляем вам гарантию до 24 месяцев (исходя из гарантийного случая)</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="footer_content_container">
+            <div class="footer_ph_num_container">
+                <h1>
+                    <i class="fa-solid fa-phone"></i>
+                    Контакты
+                </h1>
+
+                <p class="footer_ph_num_link">
+                    <a class="btn btn-W first_block_btn" href="tel:+77479602181">
+                        87479602181
+                    </a>
+                </p>
+                <p class="footer_ph_num_link">
+                    <a class="btn btn-W first_block_btn" href="tel:+77711411281">
+                        87711411281
+                    </a>
+                </p>
+                <p class="footer_ph_num_link">
+                    <a class="btn btn-W first_block_btn" href="tel:+77474760453">
+                        87474760453
+                    </a>
+                </p>
+                <hr>
+                <h2 class="footer_block_name">
+                    Дополнительно
+                </h2>
+                <p class="footer_ph_num_link">      
+                Режим работы:<br> ежедневно 9:00 - 20:00
+                </p>
+                <p class="footer_ph_num_link">    
+                    <i class="fa-solid fa-location-dot"></i>  
+                    Работаем в Алматы и Алматинской области
+                </p>
+                <p class="footer_ph_num_link">
+                    <i class="fa-solid fa-exclamation"></i> 
+                    Техническая поддержка
+                </p>
+                <p class="footer_ph_num_link">
+                    <a class="btn btn-W first_block_btn" href="#contacts">
+                        <i class="fa-solid fa-envelope"></i> 
+                        discover_91@mail.ru
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="footer_content_container">
+            <div class="footer_ph_num_container">
+                <h1>
+                    <i class="fa-solid fa-message"></i>
+                    Оставьте заявку
+                </h1>
+
+                <p class="footer_ph_num_link">
+                    Мастер свяжется с вами в ближайшее время
+                </p>
+                
+                <form action="POST" class="footer_form" id="whatsappForm">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" placeholder="Иван Иванов" required>
+                    <label for="problem" class="footer_form_label">Расскажите о проблеме</label>
+                    <input type="text" id="problem" placeholder="Не работает стиральаня машина" required>
+                    <label for="phone" class="footer_form_label">Ваш номер телефона</label>
+                    <input type="text" id="phone" placeholder="+7 XXX XXX XX XX" required>
+                    <label for="address" class="footer_form_label">Адрес</label>
+                    <input type="text" id="address" placeholder="Алматы, Улица, дом/кв, номер квартиры" required>
+                    <!-- <a class="btn btn-W first_block_btn" type="submit" href="#contacts"> 
+                        Отправить
+                    </a> -->
+                    <button type="submit" class="btn btn-submit btn-W"> 
+                        Отправить
+                    </button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Функционал бургер меню
+        document.addEventListener('DOMContentLoaded', function() {
+            const burgerBtn = document.getElementById('burgerBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const closeBtn = document.getElementById('closeBtn');
+            
+            // Открытие меню
+            burgerBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                mobileMenu.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Блокируем скролл
+            });
+            
+            // Закрытие меню
+            closeBtn.addEventListener('click', function() {
+                mobileMenu.classList.remove('active');
+                document.body.style.overflow = ''; // Разблокируем скролл
+            });
+            
+            // Закрытие меню при клике на ссылку
+            const menuLinks = document.querySelectorAll('.mobile_nav a');
+            menuLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            });
+            
+            // Закрытие меню при клике вне контента
+            mobileMenu.addEventListener('click', function(e) {
+                if (e.target === mobileMenu) {
+                    mobileMenu.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+            
+            // Закрытие меню при нажатии Escape
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && mobileMenu.classList.contains('active')) {
+                    mobileMenu.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+        });
+
+        // Анимация хэдера при скролле
+        document.addEventListener('DOMContentLoaded', function() {
+        const header = document.querySelector('.header');
+        let lastScrollY = window.scrollY;
+
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+
+            // Дополнительная анимация скрытия/показа
+            if (window.scrollY > lastScrollY && window.scrollY > 200) {
+                // Скролл вниз - скрываем хэдер
+                header.style.transform = 'translateY(-100%)';
+            } else {
+                // Скролл вверх - показываем хэдер
+                header.style.transform = 'translateY(0)';
+            }
+
+            lastScrollY = window.scrollY;
+            });
+        });
+
+        // Набор значений в боке 'О нас'
+        function initSimpleCounterAnimation() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        const numbers = entry.target.querySelectorAll('.preferences__item span');
+                        
+                        numbers.forEach((number, index) => {
+                            number.classList.add('count-up');
+                            
+                            // Простая задержка для последовательной анимации
+                            setTimeout(() => {
+                                number.style.opacity = '1';
+                                number.style.transform = 'translateY(0)';
+                            }, index * 300);
+                        });
+                        
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.3 });
+            
+            const preferencesSection = document.querySelector('.preferences');
+            if (preferencesSection) {
+                observer.observe(preferencesSection);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', initSimpleCounterAnimation);
+    
+        // Отправка сообщения в формы подвала на впп
+        document.getElementById('whatsappForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Получаем данные из формы
+        const name = document.getElementById('name').value;
+        const problem = document.getElementById('problem').value;
+        const phone = document.getElementById('phone').value;
+        const address = document.getElementById('address').value;
+        
+        // Номер WhatsApp (замените на свой)
+        const whatsappNumber = '7474760453'; // Без +, только цифры
+        
+        // Формируем сообщение
+        const message = `Новая заявка на ремонт:
+    
+        Имя: ${name}
+        Телефон: ${phone}
+        Адрес: ${address}
+        Проблема: ${problem}
+            
+        Пожалуйста, свяжитесь с клиентом как можно скорее!`;
+            
+
+        // Кодируем сообщение для URL
+        const encodedMessage = encodeURIComponent(message);
+        
+        // Создаем ссылку WhatsApp
+        const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+        
+        // Открываем WhatsApp в новом окне
+        window.open(whatsappUrl, '_blank');
+        
+        // Очищаем форму после отправки
+        this.reset();
+        
+        // Показываем уведомление (опционально)
+        alert('Форма отправлена! Откроется WhatsApp для завершения отправки.');
+    });
+    </script>
+</body>
+</html>
