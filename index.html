@@ -72,6 +72,23 @@
 
         gtag('config', 'AW-17658337573');
     </script>
+
+    <script>
+        function gtag_report_conversion(url) {
+        var callback = function () {
+            if (typeof(url) != 'undefined') {
+            window.location = url;
+            }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-17658337573/S1QUCP3a7bEbEKWyk-RB',
+            'value': 1.0,
+            'currency': 'USD',
+            'event_callback': callback
+        });
+        return false;
+    }
+    </script>
 </head>
 <body>
   <div class="topbar">
@@ -124,11 +141,11 @@
 
         <!-- Кнопки впп - телефон -->
         <div class="header_btn">
-            <a class="btn btn-B" href="https://wa.me/7474760453">
+            <a class="btn btn-B" href="https://wa.me/7474760453" onclick="gtag_report_conversion('tel:+7474760453'); return false;">
                 <i class="fa-brands fa-whatsapp"></i> 
                 What's app
             </a>
-            <a class="btn btn-B" href="tel:+77479602181">
+            <a class="btn btn-B" href="tel:+77479602181" onclick="gtag_report_conversion('tel:+77479602181'); return false;">
                 <i class="fa-solid fa-phone"></i> 
                 Телефон
             </a>
@@ -154,7 +171,7 @@
         
         <div class="mobile_contacts">
             <p>Связаться с нами</p>
-            <a href="tel:+77474760453" class="mobile_phone">+77474760453</a>
+            <a href="tel:+77474760453" class="mobile_phone" onclick="gtag_report_conversion('tel:+77474760453'); return false;">+77474760453</a>
             <a href="https://wa.me/7474760453" class="mobile_whatsapp">
                 <i class="fa-brands fa-whatsapp"></i> WhatsApp
             </a>
@@ -347,17 +364,17 @@
                 </h1>
 
                 <p class="footer_ph_num_link">
-                    <a class="btn btn-W first_block_btn" href="tel:+77479602181">
+                    <a class="btn btn-W first_block_btn" href="tel:+77479602181" onclick="gtag_report_conversion('tel:+77479602181'); return false;">
                         87479602181
                     </a>
                 </p>
                 <p class="footer_ph_num_link">
-                    <a class="btn btn-W first_block_btn" href="tel:+77711411281">
+                    <a class="btn btn-W first_block_btn" href="tel:+77711411281" onclick="gtag_report_conversion('tel:+77711411281'); return false;">
                         87711411281
                     </a>
                 </p>
                 <p class="footer_ph_num_link">
-                    <a class="btn btn-W first_block_btn" href="tel:+77474760453">
+                    <a class="btn btn-W first_block_btn" href="tel:+77474760453" onclick="gtag_report_conversion('tel:+77474760453'); return false;">
                         87474760453
                     </a>
                 </p>
@@ -404,7 +421,7 @@
                     <input type="text" id="phone" placeholder="+7 XXX XXX XX XX" required>
                     <label for="address" class="footer_form_label">Адрес</label>
                     <input type="text" id="address" placeholder="Алматы, Улица, дом/кв, номер квартиры" required>
-                    <button type="submit" class="btn btn-submit btn-W"> 
+                    <button type="submit" class="btn btn-submit btn-W" onclick="gtag_report_conversion('tel:+7474760453'); return false;"> 
                         Отправить
                     </button>
                 </form>
