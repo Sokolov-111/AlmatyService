@@ -62,33 +62,34 @@
     }
     </script>
 
-    <!-- Google tag (gtag.js) -->
-    <script 
-    async 
-    src="https://www.googletagmanager.com/gtag/js?id=AW-17658337573">
-    </script>
-    
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+    <!-- Google tag (gtag.js) --> 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17658337573"></script> 
+    <script> 
+        window.dataLayer = window.dataLayer || []; 
+        function gtag()
+        {
+            dataLayer.push(arguments);
+        } 
 
-        gtag('config', 'AW-17658337573');
+        gtag('js', new Date()); 
+        gtag('config', 'AW-17658337573'); 
     </script>
 
-    <script>
-        function gtag_report_conversion(url) {
-        var callback = function () {
-            if (typeof(url) != 'undefined') {
-            window.location = url;
-            }
-        };
-        gtag('event', 'conversion', {
-            'send_to': 'AW-17658337573/XqMcCPuyt7QbEKWyk-RB',
-            'event_callback': callback
-        });
-        return false;
-    }
+    <!-- Event snippet for Контакт conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. --> 
+    <script> 
+        function gtag_report_conversion(url) 
+        { 
+            var callback = function () 
+            { 
+                if (typeof(url) != 'undefined') 
+                { 
+                    window.location = url; 
+                } 
+            }; 
+
+            gtag('event', 'conversion', { 'send_to': 'AW-17658337573/XqMcCPuyt7QbEKWyk-RB', 'event_callback': callback }); 
+            return false; 
+        } 
     </script>
 </head>
 <body>
@@ -142,11 +143,13 @@
 
         <!-- Кнопки впп - телефон -->
         <div class="header_btn">
-            <a class="btn btn-B" href="https://wa.me/7474760453" onclick="gtag_report_conversion('tel:+7474760453'); return false;">
+            <a class="btn btn-B" href="https://wa.me/7474760453" 
+            onclick="return gtag_report_conversion('tel:+7474760453');">
                 <i class="fa-brands fa-whatsapp"></i> 
                 What's app
             </a>
-            <a class="btn btn-B" href="tel:+77479602181" onclick="gtag_report_conversion('tel:+77479602181'); return false;">
+            <a class="btn btn-B" href="tel:+77479602181"
+            onclick="return gtag_report_conversion('tel:+77479602181');">
                 <i class="fa-solid fa-phone"></i> 
                 Телефон
             </a>
@@ -172,8 +175,14 @@
         
         <div class="mobile_contacts">
             <p>Связаться с нами</p>
-            <a href="tel:+77474760453" class="mobile_phone" onclick="gtag_report_conversion('tel:+77474760453'); return false;">+77474760453</a>
-            <a href="https://wa.me/7474760453" class="mobile_whatsapp">
+            <a href="tel:+77474760453" 
+            class="mobile_phone" 
+            onclick="return gtag_report_conversion('tel:+77474760453');">
+                +77474760453
+            </a>
+            <a href="https://wa.me/7474760453" 
+            class="mobile_whatsapp"
+            onclick="return gtag_report_conversion('tel:+77474760453');">
                 <i class="fa-brands fa-whatsapp"></i> WhatsApp
             </a>
         </div>
@@ -185,7 +194,9 @@
         <div class="first_block_content_text">
             <h1>БЫСТРЫЙ РЕМОНТ<br>БЫТОВОЙ ТЕХНИКИ<br>В АЛМАТЫ И АЛМАТИНСКОЙ ОБЛАСТИ</h1>
             <p>Профессиональный ремонт любой бытовой техники с гарантией. Выезд мастера в день обращения!</p>
-            <a class="btn btn-B first_block_btn" href="tel:+77479602181">
+            <a href="tel:+77479602181"
+            class="btn btn-B first_block_btn" 
+            onclick="return gtag_report_conversion('tel:+77479602181');">
                 <i class="fa-solid fa-phone"></i>
                  Связаться с нами
             </a>
@@ -215,7 +226,8 @@
                 </div>
             </aside>  
 
-            <a class="btn btn-W first_block_btn" href="#contacts">
+            <a href="#contacts"
+            class="btn btn-W first_block_btn">
                 <i class="fa-solid fa-question"></i>
                  Подробнее
             </a>
@@ -365,17 +377,23 @@
                 </h1>
 
                 <p class="footer_ph_num_link">
-                    <a class="btn btn-W first_block_btn" href="tel:+77479602181" onclick="gtag_report_conversion('tel:+77479602181'); return false;">
+                    <a class="btn btn-W first_block_btn" 
+                    href="tel:+77479602181" 
+                    onclick="return gtag_report_conversion('tel:+77479602181');">
                         87479602181
                     </a>
                 </p>
                 <p class="footer_ph_num_link">
-                    <a class="btn btn-W first_block_btn" href="tel:+77711411281" onclick="gtag_report_conversion('tel:+77711411281'); return false;">
+                    <a class="btn btn-W first_block_btn" 
+                    href="tel:+77711411281" 
+                    onclick="return gtag_report_conversion('tel:+77711411281');">
                         87711411281
                     </a>
                 </p>
                 <p class="footer_ph_num_link">
-                    <a class="btn btn-W first_block_btn" href="tel:+77474760453" onclick="gtag_report_conversion('tel:+77474760453'); return false;">
+                    <a class="btn btn-W first_block_btn" 
+                    href="tel:+77474760453" 
+                    onclick="return gtag_report_conversion('tel:+77474760453');">
                         87474760453
                     </a>
                 </p>
@@ -384,7 +402,7 @@
                     Дополнительно
                 </h2>
                 <p class="footer_ph_num_link">      
-                Режим работы:<br> ежедневно 9:00 - 20:00
+                    Режим работы:<br> ежедневно 9:00 - 20:00
                 </p>
                 <p class="footer_ph_num_link">    
                     <i class="fa-solid fa-location-dot"></i>  
@@ -395,7 +413,8 @@
                     Техническая поддержка
                 </p>
                 <p class="footer_ph_num_link">
-                    <a class="btn btn-W first_block_btn" href="#contacts">
+                    <a 0
+                    class="btn btn-W first_block_btn">
                         <i class="fa-solid fa-envelope"></i> 
                         discover_91@mail.ru
                     </a>
@@ -422,7 +441,10 @@
                     <input type="text" id="phone" placeholder="+7 XXX XXX XX XX" required>
                     <label for="address" class="footer_form_label">Адрес</label>
                     <input type="text" id="address" placeholder="Алматы, Улица, дом/кв, номер квартиры" required>
-                    <button type="submit" class="btn btn-submit btn-W" onclick="gtag_report_conversion('tel:+7474760453'); return false;"> 
+                    <button 
+                    type="submit" 
+                    class="btn btn-submit btn-W" 
+                    onclick="return gtag_report_conversion('tel:+7474760453');"> 
                         Отправить
                     </button>
                 </form>
@@ -432,44 +454,53 @@
 
     <script>
         // Функционал бургер меню
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function() 
+        {
             const burgerBtn = document.getElementById('burgerBtn');
             const mobileMenu = document.getElementById('mobileMenu');
             const closeBtn = document.getElementById('closeBtn');
             
             // Открытие меню
-            burgerBtn.addEventListener('click', function(e) {
+            burgerBtn.addEventListener('click', function(e) 
+            {
                 e.preventDefault();
                 mobileMenu.classList.add('active');
                 document.body.style.overflow = 'hidden'; // Блокируем скролл
             });
             
             // Закрытие меню
-            closeBtn.addEventListener('click', function() {
+            closeBtn.addEventListener('click', function() 
+            {
                 mobileMenu.classList.remove('active');
                 document.body.style.overflow = ''; // Разблокируем скролл
             });
             
             // Закрытие меню при клике на ссылку
             const menuLinks = document.querySelectorAll('.mobile_nav a');
-            menuLinks.forEach(link => {
-                link.addEventListener('click', function() {
+            menuLinks.forEach(link => 
+            {
+                link.addEventListener('click', function() 
+                {
                     mobileMenu.classList.remove('active');
                     document.body.style.overflow = '';
                 });
             });
             
             // Закрытие меню при клике вне контента
-            mobileMenu.addEventListener('click', function(e) {
-                if (e.target === mobileMenu) {
+            mobileMenu.addEventListener('click', function(e) 
+            {
+                if (e.target === mobileMenu) 
+                {
                     mobileMenu.classList.remove('active');
                     document.body.style.overflow = '';
                 }
             });
             
             // Закрытие меню при нажатии Escape
-            document.addEventListener('keydown', function(e) {
-                if (e.key === 'Escape' && mobileMenu.classList.contains('active')) {
+            document.addEventListener('keydown', function(e) 
+            {
+                if (e.key === 'Escape' && mobileMenu.classList.contains('active')) 
+                {
                     mobileMenu.classList.remove('active');
                     document.body.style.overflow = '';
                 }
@@ -477,22 +508,28 @@
         });
 
         // Анимация хэдера при скролле
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function() 
+        {
         const header = document.querySelector('.header');
         let lastScrollY = window.scrollY;
 
-        window.addEventListener('scroll', function() {
-            if (window.scrollY > 100) {
+        window.addEventListener('scroll', function() 
+        {
+            if (window.scrollY > 100) 
+            {
                 header.classList.add('scrolled');
-            } else {
+            } else 
+            {
                 header.classList.remove('scrolled');
             }
 
             // Дополнительная анимация скрытия/показа
-            if (window.scrollY > lastScrollY && window.scrollY > 200) {
+            if (window.scrollY > lastScrollY && window.scrollY > 200) 
+            {
                 // Скролл вниз - скрываем хэдер
                 header.style.transform = 'translateY(-100%)';
-            } else {
+            } else 
+            {
                 // Скролл вверх - показываем хэдер
                 header.style.transform = 'translateY(0)';
             }
@@ -502,17 +539,23 @@
         });
 
         // Набор значений в боке 'О нас'
-        function initSimpleCounterAnimation() {
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
+        function initSimpleCounterAnimation() 
+        {
+            const observer = new IntersectionObserver((entries) => 
+            {
+                entries.forEach((entry) => 
+                {
+                    if (entry.isIntersecting) 
+                    {
                         const numbers = entry.target.querySelectorAll('.preferences__item span');
                         
-                        numbers.forEach((number, index) => {
+                        numbers.forEach((number, index) => 
+                        {
                             number.classList.add('count-up');
                             
                             // Простая задержка для последовательной анимации
-                            setTimeout(() => {
+                            setTimeout(() => 
+                            {
                                 number.style.opacity = '1';
                                 number.style.transform = 'translateY(0)';
                             }, index * 300);
@@ -520,11 +563,13 @@
                         
                         observer.unobserve(entry.target);
                     }
-                });
+                }
+            );
             }, { threshold: 0.3 });
             
             const preferencesSection = document.querySelector('.preferences');
-            if (preferencesSection) {
+            if (preferencesSection) 
+            {
                 observer.observe(preferencesSection);
             }
         }
@@ -532,44 +577,46 @@
         document.addEventListener('DOMContentLoaded', initSimpleCounterAnimation);
     
         // Отправка сообщения в формы подвала на впп
-        document.getElementById('whatsappForm').addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Получаем данные из формы
-        const name = document.getElementById('name').value;
-        const problem = document.getElementById('problem').value;
-        const phone = document.getElementById('phone').value;
-        const address = document.getElementById('address').value;
-        
-        // Номер WhatsApp (замените на свой)
-        const whatsappNumber = '7474760453'; // Без +, только цифры
-        
-        // Формируем сообщение
-        const message = `Новая заявка на ремонт:
-    
-        Имя: ${name}
-        Телефон: ${phone}
-        Адрес: ${address}
-        Проблема: ${problem}
+        document.getElementById('whatsappForm').addEventListener('submit', function(e) 
+        {
+            e.preventDefault();
             
-        Пожалуйста, свяжитесь с клиентом как можно скорее!`;
+            // Получаем данные из формы
+            const name = document.getElementById('name').value;
+            const problem = document.getElementById('problem').value;
+            const phone = document.getElementById('phone').value;
+            const address = document.getElementById('address').value;
             
+            // Номер WhatsApp (замените на свой)
+            const whatsappNumber = '7474760453'; // Без +, только цифры
+            
+            // Формируем сообщение
+            const message = `Новая заявка на ремонт:
+        
+            Имя: ${name}
+            Телефон: ${phone}
+            Адрес: ${address}
+            Проблема: ${problem}
+                
+            Пожалуйста, свяжитесь с клиентом как можно скорее!`;
+                
 
-        // Кодируем сообщение для URL
-        const encodedMessage = encodeURIComponent(message);
-        
-        // Создаем ссылку WhatsApp
-        const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
-        
-        // Открываем WhatsApp в новом окне
-        window.open(whatsappUrl, '_blank');
-        
-        // Очищаем форму после отправки
-        this.reset();
-        
-        // Показываем уведомление (опционально)
-        alert('Форма отправлена! Откроется WhatsApp для завершения отправки.');
-    });
+            // Кодируем сообщение для URL
+            const encodedMessage = encodeURIComponent(message);
+            
+            // Создаем ссылку WhatsApp
+            const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+            
+            // Открываем WhatsApp в новом окне
+            window.open(whatsappUrl, '_blank');
+            
+            // Очищаем форму после отправки
+            this.reset();
+            
+            // Показываем уведомление (опционально)
+            alert('Форма отправлена! Откроется WhatsApp для завершения отправки.');
+        }
+    );
     </script>
 </body>
 </html>
